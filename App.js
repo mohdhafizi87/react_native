@@ -29,7 +29,7 @@ export const App = () => {
     // <SafeAreaView styles={styles.mainContainer}>
     <>
       <View style={styles.container}>
-        <Text style={styles.titles}>My name is : {nameText}</Text>
+        <Text style={styles.titles}>My names is : {nameText}</Text>
         <TextInput
           onChangeText={textUpdate}
           style={styles.input}
