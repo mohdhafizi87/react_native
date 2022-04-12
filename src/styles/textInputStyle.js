@@ -5,7 +5,7 @@ const defaultTitle = {
     color: '#4d4d4d',
 }
 
-export const subStyles = StyleSheet.create({
+export const textInputStyle = StyleSheet.create({
     title: defaultTitle,
     titles2: {
     ...defaultTitle,

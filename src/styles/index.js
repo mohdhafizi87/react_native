@@ -1,2 +1,2 @@
 export {mainStyles} from './formInputStyle';
-export {subStyles} from './textInputStyle';
+export {textInputStyle} from './textInputStyle';

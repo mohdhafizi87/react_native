@@ -1,12 +1,15 @@
 
+import {useNavigation} from '@react-navigation/native';
 import React, {useState} from 'react'
 
-import {View, Text, TextInput} from 'react-native'
+import {View, Text, TextInput, Button} from 'react-native'
 
-import {mainStyles, subStyles} from '../styles'
+import {mainStyles, textInputStyle} from '../styles'
 
 
-export const mainApp = () => {
+export const MainApp = () => {
+
+    const navigation = useNavigation();
 
   const [nameText, setNameText] = useState('')
 
@@ -30,18 +33,24 @@ export const mainApp = () => {
     
     <>
       <View style={mainStyles.container}>
-        <Text style={subStyles.titles2}>My names is : {nameText}</Text>
+        <Text style={textInputStyle.titles2}>My names is : {nameText}</Text>
         <TextInput
           onChangeText={textUpdate}
           style={mainStyles.input}
           value={nameText}
         />
 
-      <Text style={subStyles.title}>Age is : {ageText}</Text>
+      <Text style={textInputStyle.title}>Age is : {ageText}</Text>
         <TextInput
           onChangeText={ageUpdate}
           style={mainStyles.input}
           value={ageText}
+        />
+
+        <Button
+        onPress={() => navigation.navigate('Second Page')}
+        title='go to next page'
+      
         />
       </View>
 
