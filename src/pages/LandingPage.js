@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 import {View, Text, TextInput} from 'react-native'
 
-import {mainStyles} from '../styles/formInputStyle'
+import {mainStyles, subStyles} from '../styles'
 
 
 export const mainApp = () => {
@@ -30,14 +30,14 @@ export const mainApp = () => {
     
     <>
       <View style={mainStyles.container}>
-        <Text style={mainStyles.titles}>My names is : {nameText}</Text>
+        <Text style={subStyles.titles2}>My names is : {nameText}</Text>
         <TextInput
           onChangeText={textUpdate}
           style={mainStyles.input}
           value={nameText}
         />
 
-      <Text style={mainStyles.titles}>Age is : {ageText}</Text>
+      <Text style={subStyles.title}>Age is : {ageText}</Text>
         <TextInput
           onChangeText={ageUpdate}
           style={mainStyles.input}
