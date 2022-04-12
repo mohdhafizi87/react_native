@@ -48,7 +48,7 @@ export const MainApp = () => {
         />
 
         <Button
-        onPress={() => navigation.navigate('Second Page')}
+        onPress={() => navigation.navigate('Second Page', {name:nameText, age:ageText})}
         title='go to next page'
       
         />
