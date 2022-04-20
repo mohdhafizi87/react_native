@@ -14,6 +14,20 @@ export const mainStyles = StyleSheet.create({
       //alignItems: 'center',
       padding: 10,
     },
+
+    containerMain: {
+      backgroundColor: '#dbebfa',
+      flex: 1,   
+      padding: 10,
+    },
+
+    containerLogin: {
+      backgroundColor: '#dbebfa',
+      flex: 0.9,
+      //alignItems: 'center',
+      padding: 10,
+      //borderRadius:20,
+    },
   
     containerNew: {
       backgroundColor: 'lightblue',
