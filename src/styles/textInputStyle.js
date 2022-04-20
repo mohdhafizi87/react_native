@@ -41,5 +41,10 @@ export const textInputStyle = StyleSheet.create({
       fontSize: 20,
       color: 'black',
     },
+    loadingIcon: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center'
+    },
   });
 
